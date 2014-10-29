@@ -1,16 +1,6 @@
 
 var basePath = "http://localhost:8080/crm/";
 
-if (!($ = window.jQuery)) { // typeof jQuery=='undefined' works too 
-  var jqLib = document.createElement('script'); 
-  jqLib.src = 'http://code.jquery.com/jquery-2.1.1.min.js'; 
-  document.body.appendChild(jqLib); 
-  var catcher = document.createElement('script');
-  chacher.src = 'http:/'
-} else { 
-  getCompanyInfo();
-} 
-
 function getCompanyInfo(){
 	var url = document.URL;
 	var zlCompReg = /company\.zhaopin\.com/,
