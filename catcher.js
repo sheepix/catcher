@@ -31,8 +31,9 @@ function zhilianCompanyInfo() {
 			dataType: 'json',
 			success: function(json) {
 				if (json.msg == 'ok') {
-					alert('保存成功!');
-					setTimeout(function(){openWindow(json['redirect-url'])},0);
+					if (confirm('保存成功！是否需要查看该人才？')) {
+						setTimeout(function(){openWindow(json['redirect-url'])},0);
+					}
 				}
 			}
 		})
